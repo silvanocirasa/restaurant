@@ -1,0 +1,36 @@
+body {
+    background-color: aliceblue;
+}
+
+header {
+
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20 0 10;
+}   
+
+.content {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+}
+
+.about {
+    grid-area: 2;
+}
+
+.menu {
+
+}
+
+.contact {
+
+}
+
+.footer {
+
+}
