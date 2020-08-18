@@ -2,10 +2,6 @@ body {
     background-color: aliceblue;
 }
 
-header {
-
-}
-
 .nav {
     list-style: none;
     display: flex;
@@ -15,22 +11,48 @@ header {
 
 .content {
     margin-top: 1em;
+    grid-gap: 5em;
     display: grid;
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: 50% auto;
+    grid-template-rows: 300px 400px 300px 400px;
+    grid-template-areas:  "about about"
+                          "menu menu"
+                          "contact contact"
+                          "footer footer";
 }
 
 .about {
-    grid-area: 2;
+    grid-area: about;
+    position: relative;
+}
+
+.about_p {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.img_kitchen,
+.img_cook,
+.img_redwine {
+    width: auto;
+    height: calc(100%);
 }
 
 .menu {
+    grid-area: menu;
 
 }
-
+    
 .contact {
+    grid-area: contact;
+}
 
+.img_contactform {
+    max-width: 50%;
+    height: auto;
 }
 
 .footer {
-
+    grid-area: footer;
 }
